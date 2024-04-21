@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.hidden { display: none; }
+
+.tab-button {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    border-bottom: none;
+    background-color: #F3F4F6; /* Light gray */
+    color: #111827; /* Almost black */
+}
+
+.tab-button.active {
+    background-color: #FFFFFF; /* White */
+    color: #111827; /* Almost black */
+    border-color: #D1D5DB; /* Light gray border */
+}
+
+.tab-content {
+    border: 1px solid #D1D5DB;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.form-input, .form-button {
+    border: 1px solid #E5E7EB; /* Light gray border */
+    border-radius: 0.375rem; /* Rounded */
+}
+
+.form-button {
+    background-color: #6366F1; /* Slightly vibrant purple */
+    color: white;
+}
+
+.form-button:hover {
+    background-color: #4F46E5; /* Darker purple */
+}
