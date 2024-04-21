@@ -63,3 +63,9 @@ function showTab(tabId) {
     }
     document.getElementById(tabId).style.display = 'block';
 }
+
+function generateKey() {
+    const salt = crypto.getRandomValues(new Uint8Array(16));
+    const key = window.btoa(String.fromCharCode(...salt));
+    const blob = new Blob([key], {type: 'text/plain'});
+}
