@@ -68,4 +68,10 @@ function generateKey() {
     const salt = crypto.getRandomValues(new Uint8Array(16));
     const key = window.btoa(String.fromCharCode(...salt));
     const blob = new Blob([key], {type: 'text/plain'});
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'key.key';
+    a.click();
+    window.URL.revokeObjectURL(url);
 }
