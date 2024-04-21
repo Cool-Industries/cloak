@@ -14,4 +14,6 @@ However, it's entirely possible (and relatively simple!) to store an encrypted v
 
 Well, I'm certainly curious to see what staff and admin at SSPs think of this approach! So, gathering feedback and ideas is the first step. Feel free to <a href="mailto:michael@cool.industries">contact via email</a> if you have any thoughts or ideas, or if you're a github user please feel free to use the issue reporting system.
 
-Some features I think would probably be helpful in adopting this system long-term: a way to batch update your database with encrypted UIDs, a way to regularly migrate to new key file & password combinations, native integration with some commonly used platforms (ie Excel, Google Sheets, Redcap). So if you're interested in commissioning or collaborating on any new features, again please get in <a href="mailto:michael@cool.industries">touch</a> :)
+Some features I think would probably be helpful in adopting this system long-term: a way to batch update your database with encrypted UIDs, a way to regularly migrate to new key file & password combinations, native integration with some commonly used platforms (ie Excel, Google Sheets, Redcap). So if you're interested in commissioning or collaborating on any new features, again <a href="mailto:michael@cool.industries">please get in touch</a>! :)
+
+### A Project from <a href="https://cool.industries">Cool Industries</a>
