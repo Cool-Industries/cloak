@@ -1,7 +1,7 @@
 # Cloak
 ### A <a href="https://cool.industries">Cool Industries</a> Project for Increased Data Security at SSPs
 
-This project aims to solve a common security concern at SSPs (Syringe Service Providers): the intended anonymity of unique identifiers for participants is often hardly anonymous. Identifiers usually consist of a string of letters and numbers derived from something any and every participant would know. Some examples would be the X digit in someone's birthday, or the Y digit in someone's name.
+This project aims to solve a common security concern at SSPs (Syringe Service Providers): unique identifiers used in data collection to protect the identities of participants are hardly anonymous. Identifiers usually consist of a string of letters and numbers derived from something any and every participant would know. Some examples would be the X digit in someone's birthday, or the Y digit in someone's name.
 
 The problem here is that there's a very limited set of data points from which SSPs can assume that every and any participant would know, and if the pattern gets identified (such as if such a list were to get subpoenaed or leaked) it's now a strong hint as to information on every program participant.
 
