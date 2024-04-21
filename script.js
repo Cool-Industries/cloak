@@ -55,3 +55,11 @@ function getCookie(name) {
     let parts = cookieValue.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(';').shift();
 }
+
+function showTab(tabId) {
+    const tabs = document.getElementsByClassName('tab-content');
+    for (let i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = 'none';
+    }
+    document.getElementById(tabId).style.display = 'block';
+}
