@@ -6,38 +6,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Secure Text Tool</title>
+    <title>Cloak: Encrypt Your UIDs</title>
 </head>
 <body class="bg-gray-50 text-gray-900">
     <div class="container mx-auto px-4 py-6">
-        <h1 class="text-2xl font-semibold text-center mb-6">Cloak</h1>
+        <h1 class="text-2xl font-semibold text-center mb-6">Cloak: Encrypt Your UIDs</h1>
         <div id="tabs" class="flex justify-center gap-4 mb-4 border-b">
-            <button class="tab-button px-4 py-2" onclick="showTab('tab1', this)">Generate a New Key</button>
-            <button class="tab-button px-4 py-2" onclick="showTab('tab2', this)">Add an Existing Key</button>
-            <button class="tab-button px-4 py-2" onclick="showTab('tab3', this)">Encrypt/Decrypt</button>
+            <button class="tab-button px-4 py-2" onclick="showTab('tab1', this)">Encrypt/Decrypt</button>
+            <button class="tab-button px-4 py-2" onclick="showTab('tab2', this)">First Time? Generate A Key!</button>
         </div>
 
         <div id="tab1" class="tab-content">
             <div class="flex items-center mb-2 space-x-2">
-
-                <input type="password" id="keyPassword" placeholder="Enter password for key" class="form-input w-full px-4 py-2 mb-2">
-                <button onclick="generateKey()" class="form-button px-4 py-2 w-full">Download Key File</button>
-            </div>
-        </div>
-
-        <div id="tab2" class="tab-content hidden">
-            <div class="flex items-center mb-2 space-x-2">
                 <input type="file" id="uploadKey" class="form-input flex-grow px-4 py-2">
                 <button id="clearKeyButton" class="form-button px-4 py-2 hidden">Clear Key</button>
             </div>
-        </div>
-
-        
-        <div id="tab3" class="tab-content hidden">
             <div id="keySensitiveUI" class="hidden">
                 <div class="flex items-center mb-2 space-x-2">
-                    <input type="text" id="textArea" class="form-input flex-grow px-4 py-2" placeholder="Participant UID">
-                    <input type="password" id="password" placeholder="Enter key password" class="form-input px-4 py-2">
+                    <input type="text" id="textArea" class="form-input flex-grow px-4 py-2" placeholder="Enter text here...">
+                    <input type="password" id="password" class="form-input px-4 py-2" placeholder="Enter password">
                 </div>
                 <div class="flex justify-between space-x-2">
                     <button onclick="encryptAndCopy()" class="form-button px-4 py-2 flex-grow">Encrypt & Copy</button>
@@ -45,6 +32,11 @@
                 </div>
                 <div id="message" class="mt-2"></div>
             </div>
+        </div>
+
+        <div id="tab2" class="tab-content hidden">
+            <input type="password" id="keyPassword" placeholder="Enter password for key" class="form-input w-full px-4 py-2 mb-2">
+            <button onclick="generateKey()" class="form-button px-4 py-2 w-full">Generate Key File</button>
         </div>
     </div>
 
